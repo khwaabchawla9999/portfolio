@@ -1,0 +1,250 @@
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --card: #ffffff;
+  --card-foreground: #0a0a0a;
+  --border: #e2e8f0;
+  --ring: #2563eb;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --accent: #1e293b;
+  --accent-foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --card: #0f0f0f;
+  --card-foreground: #fafafa;
+  --border: #1e293b;
+  --ring: #3b82f6;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Bento Card - Glassmorphism */
+.bento-card {
+  position: relative;
+  border-radius: 0.75rem;
+  color: var(--card-foreground);
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 1.25rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  transition: all 75ms ease-in-out;
+}
+
+.dark .bento-card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.bento-card:hover {
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+/* Card Animation */
+.card-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: cardFadeIn 0.6s ease-out forwards;
+}
+
+.card-animate:nth-child(1) { animation-delay: 0.05s; }
+.card-animate:nth-child(2) { animation-delay: 0.1s; }
+.card-animate:nth-child(3) { animation-delay: 0.15s; }
+.card-animate:nth-child(4) { animation-delay: 0.2s; }
+.card-animate:nth-child(5) { animation-delay: 0.25s; }
+.card-animate:nth-child(6) { animation-delay: 0.3s; }
+.card-animate:nth-child(7) { animation-delay: 0.35s; }
+.card-animate:nth-child(8) { animation-delay: 0.4s; }
+.card-animate:nth-child(9) { animation-delay: 0.45s; }
+.card-animate:nth-child(10) { animation-delay: 0.5s; }
+.card-animate:nth-child(11) { animation-delay: 0.55s; }
+.card-animate:nth-child(12) { animation-delay: 0.6s; }
+.card-animate:nth-child(13) { animation-delay: 0.65s; }
+.card-animate:nth-child(14) { animation-delay: 0.7s; }
+
+@keyframes cardFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Primary Button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 150ms;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-primary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--ring);
+}
+
+/* Link Card */
+.bento-link-card {
+  position: relative;
+}
+
+.bento-link-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bento-link-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dark .bento-link-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.bento-link-card .lucide-square-arrow-out-up-right {
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.bento-link-card:hover .lucide-square-arrow-out-up-right {
+  opacity: 1;
+  color: var(--primary);
+}
+
+/* Green Ping Animation */
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Responsive Grid */
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, auto);
+  }
+}
+
+@media (max-width: 1023px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Profile Image */
+.bento-card img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-foreground);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
+}
+
+/* Typography */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  border-color: var(--border);
+}
+
+.border-b {
+  border-bottom: 1px solid var(--border);
+}
+
+footer {
+  border-color: var(--border);
+}
+
+.border-t {
+  border-top: 1px solid var(--border);
+}
+
+/* Skill badges hover */
+.bento-card ul li {
+  transition: transform 150ms ease-in-out;
+}
+
+.bento-card ul li:hover {
+  transform: scale(1.05);
+}
+
+/* Muted foreground text */
+.text-muted-foreground {
+  color: var(--muted-foreground);
+}

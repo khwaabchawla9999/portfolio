@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Khwaab Chawla">
+  <meta name="description" content="Cybersecurity Enthusiast • CSE Student • Red Hat Certified - Portfolio of Khwaab Chawla">
+  <meta name="keywords" content="cybersecurity, CSE student, red hat certified, portfolio, Khwaab Chawla, encryption, network security">
+  <title>Khwaab Chawla - Cybersecurity Enthusiast</title>
+  <meta property="og:title" content="Khwaab Chawla - Cybersecurity Enthusiast">
+  <meta property="og:description" content="Cybersecurity Enthusiast • CSE Student • Red Hat Certified">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            background: 'var(--background)',
+            foreground: 'var(--foreground)',
+            primary: 'var(--primary)',
+            'primary-foreground': 'var(--primary-foreground)',
+            accent: 'var(--accent)',
+            'accent-foreground': 'var(--accent-foreground)',
+            muted: 'var(--muted)',
+            'muted-foreground': 'var(--muted-foreground)',
+            card: 'var(--card)',
+            'card-foreground': 'var(--card-foreground)',
+            border: 'var(--border)',
+            ring: 'var(--ring)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-background font-sans antialiased transition-colors duration-300">
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+    Skip to main content
+  </a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div class="container flex h-16 items-center justify-between px-4 sm:px-6">
+      <div class="flex items-center">
+        <a href="/" class="flex items-center space-x-2">
+          <span class="inline-block text-sm font-bold sm:text-base">Khwaab Chawla</span>
+        </a>
+      </div>
+      <div class="flex items-center space-x-2 sm:space-x-4">
+        <nav class="flex items-center space-x-1 sm:space-x-2">
+          <a href="https://github.com/khwaabchawla9999" target="_blank" rel="noreferrer"
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+            aria-label="GitHub Profile">
+            <span class="hidden sm:inline">GitHub</span>
+            <span class="sm:hidden">GH</span>
+          </a>
+          <!-- Theme Toggle -->
+          <button id="theme-toggle"
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10"
+            type="button" aria-label="Toggle theme">
+            <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+            <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100">
+              <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path>
+            </svg>
+            <span class="sr-only">Toggle theme</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <main class="relative m-auto grid w-full max-w-6xl gap-3 overflow-hidden p-3 sm:gap-4 sm:p-4 md:gap-5 md:p-6 lg:grid-cols-4 lg:grid-rows-8 lg:gap-6">
+
+      <!-- Welcome / Intro Card -->
+      <div class="card-animate bento-card col-span-1 md:col-span-3 md:row-span-4">
+        <div class="flex h-full w-full">
+          <div class="flex flex-col justify-between gap-4 md:max-h-[300px]">
+            <div class="flex h-full flex-col">
+              <h6 class="m-0 text-sm font-light text-gray-500">welcome</h6>
+              <p class="m-0 text-xl font-light">I am Khwaab Chawla - Cybersecurity Enthusiast &bull; CSE Student &bull; Red Hat Certified</p>
+            </div>
+            <div class="flex gap-4">
+              <a href="https://github.com/khwaabchawla9999" aria-label="github profile" target="_blank">
+                <button class="btn-primary" aria-label="github profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  <span class="sr-only">GitHub Profile</span>
+                </button>
+              </a>
+              <a href="https://www.linkedin.com/in/khwaab-chawla-b76631327" aria-label="linkedin profile" target="_blank">
+                <button class="btn-primary" aria-label="linkedin profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <span class="sr-only">LinkedIn Profile</span>
+                </button>
+              </a>
+              <a href="mailto:khwabchawla28@gmail.com" aria-label="email contact" target="_blank">
+                <button class="btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+                  <span class="sr-only">Email contact</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <img src="assets/profile.jpg" alt="Khwaab Chawla" loading="eager" decoding="async" fetchpriority="high" width="300" height="300"
+            class="pointer-events-none absolute bottom-[-20px] right-[-110px] z-[-1] max-h-[300px] w-auto select-none opacity-50 md:relative md:bottom-auto md:right-auto md:z-auto md:opacity-100">
+        </div>
+      </div>
+
+      <!-- About Me Card -->
+      <div class="card-animate bento-card col-span-1 md:col-span-1 md:row-span-6">
+        <h2 class="z-20 m-0 text-xl font-bold">About me</h2>
+        <div class="flex flex-col gap-2">
+          <p class="text-sm font-light">
+            Cybersecurity Enthusiast &amp; CSE Student at Manipal University Jaipur with hands-on experience in digital forensics, encryption, and cyber crime investigation frameworks. Interned at Cyber Cell Police Station Chandigarh, gaining real-world exposure to IC4 operations and digital evidence handling.
+            <br><br>
+            My primary tools of choice include:
+          </p>
+          <ul class="list-inside list-disc">
+            <li class="m-[0.1rem] inline-table rounded-[5px] bg-blue-600 px-[5px] text-white">Java</li>
+            <li class="m-[0.1rem] inline-table rounded-[5px] bg-blue-600 px-[5px] text-white">C/C++</li>
+            <li class="m-[0.1rem] inline-table rounded-[5px] bg-blue-600 px-[5px] text-white">Python</li>
+            <li class="m-[0.1rem] inline-table rounded-[5px] bg-blue-600 px-[5px] text-white">Linux</li>
+            <li class="m-[0.1rem] inline-table rounded-[5px] bg-blue-600 px-[5px] text-white">Network Security</li>
+            <li class="m-[0.1rem] inline-table rounded-[5px] bg-blue-600 px-[5px] text-white">Cryptography</li>
+            <li class="m-[0.1rem] inline-table rounded-[5px] bg-blue-600 px-[5px] text-white">Digital Forensics</li>
+            <li class="m-[0.1rem] inline-table rounded-[5px] bg-blue-600 px-[5px] text-white">Red Hat</li>
+            <li class="m-[0.1rem] inline-table rounded-[5px] bg-blue-600 px-[5px] text-white">Cybercrime Analysis</li>
+          </ul>
+          <p class="text-sm font-light">
+            Seeking opportunities to contribute cybersecurity expertise and innovative problem-solving skills in dynamic security environments.
+          </p>
+        </div>
+      </div>
+
+      <!-- CV / Resume Card -->
+      <div class="card-animate bento-card col-span-1 md:col-span-1 md:row-span-4">
+        <h2 class="z-20 m-0 text-xl font-bold">CV</h2>
+        <div class="mt-4 flex w-full justify-center">
+          <div class="gap-2 transition-all">
+            <div class="mt-4 flex flex-col gap-2">
+              <p class="text-sm text-muted-foreground">Click the button below to download my Resume</p>
+              <div class="mt-2 flex w-full items-center justify-start">
+                <button id="download-cv-btn" data-url="assets/Khwaab_Chawla_Resume.docx" data-filename="Khwaab_Chawla_Resume.docx" class="btn-primary">
+                  Khwaab Chawla - Resume
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file ml-2" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Now Card -->
+      <div class="card-animate bento-card col-span-1 md:col-span-1 md:row-span-2">
+        <div class="mb-2 flex w-full items-start justify-between">
+          <div class="flex flex-col">
+            <h2 class="z-20 m-0 text-xl font-bold">Now</h2>
+          </div>
+          <span class="relative flex h-3 w-3">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+            <span class="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
+          </span>
+        </div>
+        <p class="text-xs">Currently working as Cybersecurity Analyst &amp; Security Research Enthusiast</p>
+      </div>
+
+      <!-- Portfolio & Projects Card -->
+      <div class="card-animate bento-card bento-link-card col-span-1 md:col-span-1 md:row-span-2 cursor-pointer hover:border-primary hover:bg-white/20">
+        <a href="#projects" class="block h-full w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-arrow-out-up-right group-hover:text-primary absolute right-6"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path><path d="m21 3-9 9"></path><path d="M15 3h6v6"></path></svg>
+          <h2 class="z-20 m-0 text-xl font-bold">Portfolio &amp; Projects</h2>
+        </a>
+      </div>
+
+      <!-- Blogs Card -->
+      <div class="card-animate bento-card bento-link-card col-span-1 md:col-span-1 md:row-span-2 cursor-pointer hover:border-primary hover:bg-white/20">
+        <a href="#" class="block h-full w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-arrow-out-up-right group-hover:text-primary absolute right-6"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path><path d="m21 3-9 9"></path><path d="M15 3h6v6"></path></svg>
+          <h2 class="z-20 m-0 text-xl font-bold">Blogs</h2>
+        </a>
+      </div>
+
+      <!-- Time Zone Card -->
+      <div class="card-animate bento-card col-span-1 lg:col-span-2 md:row-span-2">
+        <h2 class="z-20 m-0 text-xl font-bold">Time zone</h2>
+        <div id="timezone-display">
+          <p id="tz-time" class="text-2xl font-semibold"></p>
+          <p class="text-sm text-gray-500">Chandigarh, India</p>
+        </div>
+      </div>
+
+      <!-- Contact Card -->
+      <div class="card-animate bento-card col-span-1 md:col-span-1 md:row-span-1">
+        <div class="h-full">
+          <header class="flex items-center">
+            <h1 class="text-xl font-bold text-foreground">Let's start working together!</h1>
+          </header>
+          <address class="mt-4 flex flex-col not-italic">
+            <h2 class="text-gray-500">Contact Details</h2>
+            <p>khwabchawla28@gmail.com</p>
+          </address>
+          <div class="mt-4 flex w-fit flex-col">
+            <h2 class="text-gray-500">Socials</h2>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/khwaab-chawla-b76631327" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/khwaabchawla9999" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Card -->
+      <div class="card-animate bento-card col-span-1 md:col-span-1 md:row-span-2">
+        <h2 class="z-20 m-0 text-xl font-bold">Experience</h2>
+        <div class="mt-2 space-y-4">
+          <div>
+            <h3 class="text-lg font-semibold">Cybersecurity Intern</h3>
+            <a class="text-sm text-primary" href="#" target="_blank" rel="noopener noreferrer">Cyber Cell Police Station, Sec-17</a>
+            <p class="text-sm text-gray-600">2024</p>
+            <p class="text-xs text-gray-500">Chandigarh, India</p>
+          </div>
+          <a href="#experience">
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors text-primary underline-offset-4 hover:underline h-10 px-4 py-2 pl-0">
+              View More
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quote Card -->
+      <div class="card-animate bento-card col-span-1 md:col-span-2">
+        <div class="flex h-full flex-col justify-between">
+          <blockquote class="mt-6 border-l-2 pl-6 italic">
+            "Give it some time — things will fall into place on their own"
+          </blockquote>
+          <p class="mt-2 text-xs">- Khwaab Chawla</p>
+        </div>
+      </div>
+
+      <!-- Tennis / Sports Card -->
+      <div class="card-animate bento-card bento-link-card col-span-1 md:col-span-1 md:row-span-1 cursor-pointer hover:border-primary hover:bg-white/20">
+        <a href="https://www.instagram.com/_khwaabchawla" class="block h-full w-full" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-arrow-out-up-right group-hover:text-primary absolute right-6"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path><path d="m21 3-9 9"></path><path d="M15 3h6v6"></path></svg>
+          <h2 class="z-20 m-0 text-xl font-bold">Tennis Player</h2>
+          <div class="flex h-full w-full flex-col">
+            <div>
+              <p class="mt-2 text-sm text-muted-foreground">State tennis player, UTR title holder, Gold medalist in university championships, and college team tennis captain</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Study / Education Card -->
+      <div class="card-animate bento-card col-span-1 md:col-span-2">
+        <h2 class="z-20 m-0 text-xl font-bold">Study</h2>
+        <div class="mt-2 flex w-full flex-wrap items-center justify-start gap-2">
+          <div class="text-start">
+            <a href="https://www.manipaluniversity.com/" target="_blank" rel="noopener noreferrer" class="block">
+              <div class="inline-flex items-center text-xs font-semibold transition-colors text-foreground mb-1">Manipal University Jaipur</div>
+            </a>
+            <p class="text-xs text-gray-600">B.Tech in Computer Science &amp; Engineering | CGPA: 8.0</p>
+            <p class="text-xs text-gray-500">2023 - Present</p>
+          </div>
+          <div class="text-start">
+            <div class="inline-flex items-center text-xs font-semibold transition-colors text-foreground mb-1">Certifications</div>
+            <p class="text-xs text-gray-600">Red Hat Certified | NPTEL Programming in Java | Introduction to Cybersecurity</p>
+            <p class="text-xs text-gray-500">2023 - Present</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Card (additional, for the projects section) -->
+      <div id="projects" class="card-animate bento-card col-span-1 md:col-span-2 md:row-span-2">
+        <h2 class="z-20 m-0 text-xl font-bold">Projects</h2>
+        <div class="mt-2 space-y-3">
+          <div>
+            <h3 class="text-sm font-semibold">Password Strength Checker</h3>
+            <p class="text-xs text-gray-500">Python-based password strength analyser that evaluates length, complexity, and entropy to classify password strength in real time.</p>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold">File Encryption &amp; Decryption Tool</h3>
+            <p class="text-xs text-gray-500">File-level encryption tool using symmetric key cryptography, allowing users to securely encrypt and decrypt sensitive files.</p>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold">Caesar Cipher Encryption</h3>
+            <p class="text-xs text-gray-500">Caesar Cipher encoder/decoder in Java with configurable shift values, supporting both encryption and brute-force decryption.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awards Card -->
+      <div class="card-animate bento-card col-span-1 md:col-span-2">
+        <h2 class="z-20 m-0 text-xl font-bold">Awards &amp; Achievements</h2>
+        <div class="mt-2 space-y-2">
+          <div class="flex items-start gap-2">
+            <span class="text-yellow-500">&#9733;</span>
+            <p class="text-sm font-light">Gold Medal — LNMIIT Jaipur University Lawn Tennis Championships</p>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="text-gray-400">&#9733;</span>
+            <p class="text-sm font-light">Silver Medal — Inter-University Lawn Tennis Competition at Shiv Nadar University, Delhi</p>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="text-blue-500">&#9733;</span>
+            <p class="text-sm font-light">Tennis Captain at Manipal University Jaipur — led team strategy, training, and inter-university representation</p>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="text-green-500">&#9733;</span>
+            <p class="text-sm font-light">National-level hackathons participant — collaborating on tech solutions under time-constrained environments</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t py-6 md:px-8 md:py-0">
+    <div class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+      <p class="text-center text-sm leading-loose text-muted-foreground md:text-left">
+        Built by <a href="https://github.com/khwaabchawla9999" target="_blank" rel="noreferrer" class="font-medium underline underline-offset-4">Khwaab Chawla</a> with <span class="text-red-500">&#10084;&#65039;</span> using HTML and Tailwind CSS.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
